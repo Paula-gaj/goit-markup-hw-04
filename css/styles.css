@@ -156,6 +156,7 @@ a {
   background-repeat: no-repeat;
   text-align: center;
   padding: 188px 0;
+  margin: 0 auto;
 }
 
 .header-primary {
@@ -210,10 +211,11 @@ a {
 .icon-our-values {
   border-radius: 4px;
   background: var(--color-cloud);
-  text-align: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
   margin-bottom: 8px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header-tertiary {
@@ -314,15 +316,18 @@ a {
   fill: var(--color-cloud);
   width: 40px;
   height: 40px;
-  cursor: pointer;
+}
+
+.icon-our-team:hover,
+.icon-our-team:focus {
+  background: var(--color-green);
+  fill: var(--color-cloud);
+  border-radius: 50%;
 }
 
 .icons-customers {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 1200px;
-  margin: 0 auto;
+  gap: 24px;
 }
 
 .customers-icons-list {
@@ -330,8 +335,8 @@ a {
   fill: var(--color-light-slate);
   border-radius: 4px;
   cursor: pointer;
-  width: 170px;
-  height: 92px;
+  width: 168px;
+  height: 88px;
   display: flex;
   justify-content: center;
   align-items: center;
