@@ -311,15 +311,23 @@ a {
 }
 
 .icon-our-team {
-  background: var(--color-iris);
-  border-radius: 50%;
   fill: var(--color-cloud);
-  width: 40px;
-  height: 40px;
+  width: 16px;
+  height: 16px;
 }
 
-.icon-our-team:hover,
-.icon-our-team:focus {
+.our-team-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--color-ocean);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.our-team-link:hover,
+.our-team-link:focus {
   background: var(--color-green);
   fill: var(--color-cloud);
   border-radius: 50%;
@@ -330,19 +338,24 @@ a {
   gap: 24px;
 }
 
-.customers-icons-list {
+.customers-icon {
+  width: 104px;
+  height: 56px;
+}
+
+.customers-icons-link {
   border: 1px solid var(--color-light-slate);
-  fill: var(--color-light-slate);
   border-radius: 4px;
-  cursor: pointer;
   width: 168px;
   height: 88px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  fill: var(--color-light-slate);
 }
 
-.customers-icons-list:hover {
+.customers-icons-link:focus,
+.customers-icons-link:hover {
   fill: var(--color-ocean);
   border: 1px solid var(--color-ocean);
 }
@@ -401,16 +414,25 @@ a {
 }
 
 .icon-social-footer {
-  background: var(--color-iris);
-  border-radius: 50%;
   fill: var(--color-cloud);
+  width: 24px;
+  height: 24px;
+}
+
+.footer-link {
   width: 40px;
   height: 40px;
+  border-radius: 50%;
+  background: var(--color-ocean);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.icon-social-footer:hover {
+
+.footer-link:hover,
+.footer-link:focus {
   background: var(--color-green);
   border-radius: 50%;
-  cursor: pointer;
   fill: var(--color-cloud);
 }
 
